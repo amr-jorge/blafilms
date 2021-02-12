@@ -6,7 +6,7 @@ const Film = ({ film }) => {
   const { imdbID, Poster, Title, Type, Year } = film;
   return (
     <div className="search-item">
-      <img src={Poster === 'N/A' ? placeholderImg : Poster} title={Title} />
+      <img src={Poster === 'N/A' ? placeholderImg : Poster} title={Title} alt={Title} />
       <div className="search-item-data">
         <div className="title">{Title}</div>
         <div className="meta">{`${Type} | ${Year}`}</div>
